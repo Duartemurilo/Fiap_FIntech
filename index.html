@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="register.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Fintech</title>
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="./images/logoFintench.png"
+        alt="imagem da logo da Fintech"
+      />
+    </header>
+    <section>
+      <div class="cardImage">
+        <div id="boxtxt">
+          <p class="text-financas">Hora de transformar suas finanças.</p>
+        </div>
+
+        <img
+          class="wavybus"
+          id="animation"
+          src="./images/Wavy_Bus-16_Single-07.jpg"
+          alt="imagem representativa"
+        />
+
+        <img
+          class="wavybus"
+          id="avatar"
+          src="./images/avatar.webp"
+          alt="imagem representativa"
+        />
+      </div>
+
+      <div class="cardForm">
+        <div class="headerForm">
+          <div class="btn-text" id="entrar">
+            <p>ENTRAR</p>
+          </div>
+          <div class="btn-text" id="cadastrar">
+            <p>CADASTRAR</p>
+          </div>
+        </div>
+
+        <div class="card-btn-social-media" style="margin-top: 6vh">
+          <button style="background-color: #2962ff" class="btn-social-media">
+            <img class="icon" src="./images//facebook.png" />
+            <p id="facebook">continuar com Facebook</p>
+          </button>
+          <button style="background-color: black" class="btn-social-media">
+            <img class="icon" src="./images//google.png" />
+            <p id="google">continuar com Google</p>
+          </button>
+        </div>
+
+        <div id="option">
+          <div id="line"></div>
+          <p>ou</p>
+          <div id="line"></div>
+        </div>
+
+        <div class="CardForm">
+          <form id="formLogin">
+            <div class="card-control">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="form-control email"
+              />
+              <p class="hide" id="text-email">Email invalido</p>
+            </div>
+            <div class="card-control" id="card-control-password">
+              <input
+                type="password"
+                name="password"
+                id="inputPassword"
+                placeholder="Senha"
+                class="form-control"
+              />
+              <span class="lnr lnr-eye"></span>
+            </div>
+
+            <p id="text-forget-password">Esqueceu sua senha?</p>
+          </form>
+          <a href="dashboard.html"
+            ><button class="btn-login" type="submit" id="entrar-btn">
+              Entrar
+            </button></a
+          >
+        </div>
+
+        <div class="CardForm">
+          <form id="formSignup" class="hide">
+            <div class="card-control">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nome Completo"
+                class="form-control"
+              />
+            </div>
+            <div class="card-control">
+              <input
+                type="email"
+                name="email"
+                id="emailSignup"
+                placeholder="Email"
+                class="form-control"
+              />
+              <p class="hide" id="text-email-signup">Email invalido</p>
+            </div>
+            <div class="card-control">
+              <input
+                type="text"
+                name="cpf"
+                id="cpf"
+                placeholder="Cpf"
+                class="form-control"
+              />
+              <p class="hide" id="cpf-error">Cpf invalido!</p>
+            </div>
+            <div class="card-control">
+              <input
+                type="text"
+                name="cep"
+                id="cep"
+                placeholder="Cep"
+                class="form-control"
+              />
+            </div>
+            <div class="card-control">
+              <input
+                type="text"
+                name="senha"
+                id="senha"
+                placeholder="Senha"
+                class="form-control"
+              />
+            </div>
+          </form>
+          <a href="dashboard.html">
+            <button class="hide" id="signup-button">Cadastre-se</button></a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

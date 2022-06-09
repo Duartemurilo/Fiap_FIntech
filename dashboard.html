@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css"
+    />
+    <link
+      rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+      type="text/css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="dashboard_service.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="dashboard_style.css" />
+    <link rel="stylesheet" type="text/css" href="dashboard-banner-style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="dashboard-side-bar-style.css"
+    />
+    <title>Fintech</title>
+  </head>
+  <body>
+    <section class="side-bar">
+      <img
+        src="./images/avatar.webp"
+        alt="Imagem da Logo da Fintech"
+        class="logo-image"
+      />
+      <br />
+      <div class="side-bar-option">
+        <img
+          class="icon-side-bar"
+          src="./images/Icons/home.png"
+          alt="icone que representa a home"
+        />
+        <p class="text-option">Home</p>
+      </div>
+
+      <div class="side-bar-option">
+        <img
+          class="icon-side-bar"
+          src="./images/Icons/profile.png"
+          alt="icone que representa o perfil"
+        />
+        <p class="text-option">Perfil</p>
+      </div>
+
+      <div class="side-bar-option">
+        <img
+          class="icon-side-bar"
+          src="./images/Icons/send-money.png"
+          alt="icone que representa transferencia"
+        />
+        <p class="text-option">Transferencia</p>
+      </div>
+
+      <div class="side-bar-option">
+        <img
+          class="icon-side-bar"
+          src="./images/Icons/wallet.png"
+          alt="icone que representa a carteira"
+        />
+        <p class="text-option">Carteira</p>
+      </div>
+
+      <div class="side-bar-option">
+        <img
+          class="icon-side-bar"
+          src="./images/Icons/pay-dollar.png"
+          alt="icone que representa as reaceitas"
+        />
+        <p class="text-option">Receita</p>
+      </div>
+
+      <div class="side-bar-option">
+        <img
+          class="icon-side-bar"
+          src="./images/Icons/shopping-bag.png"
+          alt="icone que representa as gastos"
+        />
+        <p class="text-option">Gastos</p>
+      </div>
+
+      <div class="side-bar-option">
+        <img
+          class="icon-side-bar"
+          src="./images/Icons/setting.png"
+          alt="icone que representa as configurações"
+        />
+        <p class="text-option">Configurações</p>
+      </div>
+
+      <button class="btn-add">
+        <p id="more">+</p>
+        Adicionar
+      </button>
+    </section>
+
+    <section class="banner">
+      <div class="header-banner">
+        <div class="card-profile-banner">
+          <img
+            src="./images/avatar.webp"
+            alt="foto do avatar"
+            class="avatar-banner"
+          />
+          <p>Murilo Duarte</p>
+        </div>
+        <img
+          class="setting-icon"
+          src="./images/Icons/setting.png"
+          alt="icone"
+        />
+      </div>
+
+      <div class="container-dashboard">
+        <p class="text-dashboard">Dashboard</p>
+        <div class="container-cards-dashboard">
+          <div class="card-dashboard">
+            <div class="card-value">
+              <p class="title-dashboard">Saldo</p>
+              <p class="value-dashboard">R$ 1.257,77</p>
+            </div>
+            <div class="card-image-dashboard">
+              <img src="./images/Icons/wallet.png" alt="icon representativo" />
+            </div>
+          </div>
+
+          <div class="card-dashboard">
+            <div class="card-value">
+              <p class="title-dashboard">Receita</p>
+              <p class="value-dashboard">R$ 853,77</p>
+            </div>
+            <div class="card-image-dashboard">
+              <img
+                src="./images/Icons/pay-dollar.png"
+                alt="icon representativo"
+              />
+            </div>
+          </div>
+
+          <div class="card-dashboard">
+            <div class="card-value">
+              <p class="title-dashboard">Despesas</p>
+              <p class="value-dashboard">R$ 819,77</p>
+            </div>
+            <div class="card-image-dashboard">
+              <img
+                src="./images/Icons/shopping-bag.png"
+                alt="icon representativo"
+              />
+            </div>
+          </div>
+
+          <div class="card-dashboard">
+            <div class="card-value">
+              <p class="title-dashboard">Cartão</p>
+              <p class="value-dashboard">R$ 475,77</p>
+            </div>
+            <div class="card-image-dashboard">
+              <img src="./images/Icons/card.png" alt="icon representativo" />
+            </div>
+          </div>
+
+          <div class="container-card-char-carrosel">
+            <div class="container-analytics">
+              <h6 class="title-card-analytics">Receitas</h6>
+              <div class="card-analytics" id="card-chart">
+                <div id="donut-chart"></div>
+                <div class="btn-see-more-analytcs">Ver Mais</div>
+              </div>
+            </div>
+
+            <div class="container-analytics">
+              <h6 id="container-analytics-curso" class="title-card-analytics">
+                Curso
+              </h6>
+              <div class="card-analytics" id="card-curso">
+                <img
+                  class="curso-image"
+                  src="./images/emprestimo-simplic.jpg"
+                  alt="imagem de um homem negro estudando 
+                curso"
+                />
+                <div class="card-text">
+                  <h6>Curso de finanças</h6>
+                  <p>
+                    Aprenda as melhores técnicas de gerenciamento financeiro com
+                    os maiores especialistas financeiros.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
